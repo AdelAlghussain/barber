@@ -18,7 +18,7 @@ class CommentController extends Controller
      */
     public function index()
     {
-        $comments = Comment::get();
+        $comments = Comment::simplePaginate(4);
         return view('dashboard.comments')->with('comments', $comments);
     }
 

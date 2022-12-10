@@ -19,7 +19,7 @@ class EmpolyeeController extends Controller
      */
     public function index()
     {
-        $employees = Empolyee::get();
+        $employees = Empolyee::simplePaginate(5);
         return view('dashboard.employee.employees')->with('employees', $employees);
     }
 

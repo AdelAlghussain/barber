@@ -52,7 +52,7 @@
                                         <th>Address</th>
                                         <th>Years of Experience</th>
                                         <th>Twitter Account</th>
-                                        <th>Facbook Account</th>
+                                        <th>Facebook Account</th>
                                         <th>Description</th>
                                         {{-- <th>Proccess</th> --}}
                                     </tr>
@@ -98,7 +98,7 @@
 
             <!-- /.row -->
         </div><!-- /.container-fluid -->
-
+        <div class="float-right"> {!! $employees->links() !!}</div>
     </section>
     
 @endsection

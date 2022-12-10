@@ -87,6 +87,7 @@
 
             <!-- /.row -->
         </div><!-- /.container-fluid -->
+        <div class="float-right"> {!! $products->links() !!}</div>
 
     </section>
     

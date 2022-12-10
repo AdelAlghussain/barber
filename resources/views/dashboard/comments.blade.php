@@ -44,40 +44,35 @@
                                 <tbody>
 
                                     @foreach ($comments as $item)
-                                        
-                                
-                                    <tr>
-                                        <td>{{$item->name}}</td>
-                                        <td>{{$item->email}}</td>
-                                        <td>{{$item->created_at->format('Y:m:d')}}</td>
-                                        <td>{{$item->comment}}</td>
-                                        <td>
-                                            <a href="/delete-comment/{{ $item->id }}" type="button"
-                                                class="btn btn-danger" onclick="return confirm('delete')">Delete</a>
-                                        </td>
-                                        {{-- <td>{{$item->comment}}</td> --}}
-                                        {{-- <td><span class="tag tag-success">Approved</span></td> --}}
-                                    </tr>
-
+                                        <tr>
+                                            <td>{{ $item->name }}</td>
+                                            <td>{{ $item->email }}</td>
+                                            <td>{{ $item->created_at->format('Y:m:d') }}</td>
+                                            <td>{{ $item->comment }}</td>
+                                            <td>
+                                                <a href="/delete-comment/{{ $item->id }}" type="button"
+                                                    class="btn btn-danger" onclick="return confirm('delete')">Delete</a>
+                                            </td>
+                                            {{-- <td>{{$item->comment}}</td> --}}
+                                            {{-- <td><span class="tag tag-success">Approved</span></td> --}}
+                                        </tr>
                                     @endforeach
 
                                 </tbody>
-                                
+
                             </table>
 
                         </div>
                         <!-- /.card-body -->
-                        
+
                     </div>
-                    
+
                     <!-- /.card -->
                 </div>
             </div>
 
             <!-- /.row -->
         </div><!-- /.container-fluid -->
-
+        <div class="float-right"> {!! $comments->links() !!}</div>
     </section>
-    {{-- {!! $comments->links() !!} --}}
-
 @endsection

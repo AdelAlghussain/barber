@@ -89,5 +89,6 @@
         </div><!-- /.container-fluid -->
 
     </section>
-    
+    <div class="float-right"> {!! $offers->links() !!}</div>
+
 @endsection

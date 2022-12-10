@@ -19,7 +19,7 @@ class OfferController extends Controller
      */
     public function index()
     {
-        $offers = Offer::get();
+        $offers = Offer::simplePaginate(5);
         return view('dashboard.offer.offers')->with('offers', $offers);
     }
 

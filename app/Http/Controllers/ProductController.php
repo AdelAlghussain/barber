@@ -19,7 +19,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::get();
+        $products = Product::simplePaginate(5);
         return view('dashboard.product.products')->with('products', $products);
     }
 
