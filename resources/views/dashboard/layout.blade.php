@@ -47,6 +47,7 @@
 
 
                         <li class="nav-item">
+ 
                             <a href="/" class="nav-link">
                                 <i class="fas fa-th"></i>
                                 <p>
@@ -124,6 +125,24 @@
                             </a>
                         </li>
 
+                        <li class="nav-item">
+                            <a href="/setting" class="nav-link">
+                                <i class="fas fa-cog"></i>
+                                <p>
+                                    Setting
+                                </p>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="/logout" class="nav-link">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <p>
+                                    Logout
+                                </p>
+                            </a>
+                        </li>
 
 
                     </ul>

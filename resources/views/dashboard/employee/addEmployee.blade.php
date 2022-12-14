@@ -8,7 +8,10 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+                        <li class="breadcrumb-item">
+
+                            <a href="/">Dashboard</a>
+                        </li>
                         <li class="breadcrumb-item active">employees</li>
                     </ol>
                 </div>
@@ -24,31 +27,29 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form method="POST"  action="/add-employee" accept-charset="UTF-8" enctype="multipart/form-data">
+            <form method="POST" action="/add-employee" accept-charset="UTF-8" enctype="multipart/form-data">
                 @csrf
                 <div class="card-body">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" required name="name" id="name" placeholder="name"
-                            >
+                        <input type="text" class="form-control" required name="name" id="name"
+                            placeholder="name">
                     </div>
 
                     <div class="form-group">
                         <label for="age">Age</label>
-                        <input type="number" class="form-control" required name="age" id="age" placeholder="age"
-                            >
+                        <input type="number" class="form-control" required name="age" id="age" placeholder="age">
                     </div>
 
                     <div class="form-group">
                         <label for="experience">Years of Experience</label>
                         <input type="number" required class="form-control" name="experience" id="experience"
-                            placeholder="Experience" >
+                            placeholder="Experience">
                     </div>
 
                     <div class="form-group">
                         <label for="description">Description</label>
-                        <textarea  required class="form-control" name="description" id="description"
-                            placeholder="Description" ></textarea>
+                        <textarea required class="form-control" name="description" id="description" placeholder="Description"></textarea>
                     </div>
 
 
@@ -61,17 +62,17 @@
                                 <div class="valid-feedback">Looks good!</div>
                                 <div class="invalid-feedback">
                                     Please image is required.
+                                </div>
+
                             </div>
-
                         </div>
+
                     </div>
+                    <!-- /.card-body -->
 
-                </div>
-                <!-- /.card-body -->
-
-                <div class="card-footer">
-                    <button type="submit" class="btn btn-primary float-right col-3">Submit</button>
-                </div>
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary float-right col-3">Submit</button>
+                    </div>
             </form>
         </div>
     </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\EmpolyeeController;
 use App\Http\Controllers\GallaryController;
@@ -26,6 +27,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/comments',[CommentController::class,'comments']);
 Route::post('/add-comment',[CommentController::class,'add']);
+Route::post('/booking',[BookingController::class,'booking']);
 
 Route::get('/gallaries',[GallaryController::class,'gallaries']);
 Route::get('/results',[ResultController::class,'results']);
